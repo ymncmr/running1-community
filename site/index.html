@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malmong Running Club – Run Together, Stay Together</title>
   <meta name="description" content="Malmong Running Club is a Philippine-based running community for all levels. Join our weekly runs across Metro Manila, Cebu, and Baguio.">
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <link rel="preload" as="image" href="assets/photo-01.webp" type="image/webp">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
   <script>
@@ -109,7 +112,10 @@
     <!-- Hero Section -->
     <section class="relative min-h-[870px] flex items-center justify-center overflow-hidden bg-surface-container-highest">
       <div class="absolute inset-0 z-0">
-        <img src="assets/photo-01.jpg" alt="Malmong Running Club members running together at sunrise in Metro Manila" class="w-full h-full object-cover opacity-90">
+        <picture style="display:contents">
+          <source srcset="assets/photo-01.webp" type="image/webp">
+          <img src="assets/photo-01.jpg" alt="Malmong Running Club members running together at sunrise in Metro Manila" class="w-full h-full object-cover opacity-90" fetchpriority="high" decoding="async">
+        </picture>
         <div class="absolute inset-0 hero-overlay"></div>
       </div>
       <div class="relative z-10 max-w-[1280px] mx-auto px-gutter text-center space-y-lg mt-xl">
@@ -165,13 +171,22 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-md">
           <div class="rounded-[24px] overflow-hidden aspect-square img-hover deep-shadow">
-            <img src="assets/grid-photo.png" alt="Malmong Running Club community photo collage showing group runs and events" class="w-full h-full object-cover">
+            <picture style="display:contents">
+              <source srcset="assets/grid-photo.webp" type="image/webp">
+              <img src="assets/grid-photo.png" alt="Malmong Running Club community photo collage showing group runs and events" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="rounded-[24px] overflow-hidden aspect-square img-hover deep-shadow">
-            <img src="assets/photo-02.jpg" alt="Club members celebrating after completing a training run together" class="w-full h-full object-cover">
+            <picture style="display:contents">
+              <source srcset="assets/photo-02.webp" type="image/webp">
+              <img src="assets/photo-02.jpg" alt="Club members celebrating after completing a training run together" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="rounded-[24px] overflow-hidden aspect-square img-hover deep-shadow col-span-2 md:col-span-1">
-            <img src="assets/photo-03.jpg" alt="Runners gathered at a community event, stretching and socializing" class="w-full h-full object-cover">
+            <picture style="display:contents">
+              <source srcset="assets/photo-03.webp" type="image/webp">
+              <img src="assets/photo-03.jpg" alt="Runners gathered at a community event, stretching and socializing" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
           </div>
         </div>
       </div>
@@ -245,7 +260,10 @@
     <!-- Join CTA Banner -->
     <section class="py-xl bg-primary-container relative overflow-hidden">
       <div class="absolute inset-0 opacity-10">
-        <img src="assets/photo-06.jpg" alt="" aria-hidden="true" class="w-full h-full object-cover">
+        <picture style="display:contents">
+          <source srcset="assets/photo-06.webp" type="image/webp">
+          <img src="assets/photo-06.jpg" alt="" aria-hidden="true" class="w-full h-full object-cover" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="relative z-10 max-w-[1280px] mx-auto px-gutter text-center">
         <h2 class="font-display-xl text-[clamp(40px,6vw,80px)] text-on-primary leading-none mb-md" style="font-family: Anybody; font-weight: 800;">Ready to run with us?</h2>

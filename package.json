@@ -4,6 +4,10 @@
   "description": "Malmong Running Club – Philippine community running website",
   "scripts": {
     "serve": "npx serve site -p 3000",
-    "start": "npx serve site -p 3000"
+    "start": "npx serve site -p 3000",
+    "optimize": "node scripts/optimize-images.js"
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5"
   }
 }

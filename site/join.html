@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join the Community – Malmong Running Club</title>
   <meta name="description" content="Join Malmong Running Club today. Every level welcome — from first steps to marathon runners. Sign up and start running with us.">
-  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
   <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
   <script>
@@ -84,13 +86,13 @@
         <div class="flex items-center gap-sm bg-surface-container-low rounded-[16px] p-sm border border-outline-variant/30 ambient-shadow mb-sm">
           <div class="flex -space-x-2 flex-shrink-0">
             <div class="w-9 h-9 rounded-full bg-primary-container border-2 border-surface-container-lowest overflow-hidden">
-              <img src="assets/photo-02.jpg" alt="Member" class="w-full h-full object-cover">
+              <picture style="display:contents"><source srcset="assets/photo-02.webp" type="image/webp"><img src="assets/photo-02.jpg" alt="Member" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
             </div>
             <div class="w-9 h-9 rounded-full bg-secondary-container border-2 border-surface-container-lowest overflow-hidden">
-              <img src="assets/photo-03.jpg" alt="Member" class="w-full h-full object-cover">
+              <picture style="display:contents"><source srcset="assets/photo-03.webp" type="image/webp"><img src="assets/photo-03.jpg" alt="Member" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
             </div>
             <div class="w-9 h-9 rounded-full bg-surface-variant border-2 border-surface-container-lowest overflow-hidden">
-              <img src="assets/photo-004.jpg" alt="Member" class="w-full h-full object-cover">
+              <picture style="display:contents"><source srcset="assets/photo-004.webp" type="image/webp"><img src="assets/photo-004.jpg" alt="Member" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
             </div>
             <div class="w-9 h-9 rounded-full bg-primary-fixed border-2 border-surface-container-lowest flex items-center justify-center">
               <span class="text-[10px] font-bold text-on-primary-fixed-variant">+497</span>
@@ -102,10 +104,16 @@
         <!-- Image Grid -->
         <div class="grid grid-cols-2 gap-sm">
           <div class="rounded-[20px] overflow-hidden aspect-square ambient-shadow relative group img-hover">
-            <img src="assets/photo-07.jpg" alt="Club runners smiling during a community run along a scenic Philippine coastline" class="w-full h-full object-cover">
+            <picture style="display:contents">
+              <source srcset="assets/photo-07.webp" type="image/webp">
+              <img src="assets/photo-07.jpg" alt="Club runners smiling during a community run along a scenic Philippine coastline" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
           </div>
           <div class="rounded-[20px] overflow-hidden aspect-[4/5] ambient-shadow relative group img-hover mt-lg">
-            <img src="assets/photo-08.jpg" alt="Solo runner navigating a bridge at sunrise in Manila" class="w-full h-full object-cover">
+            <picture style="display:contents">
+              <source srcset="assets/photo-08.webp" type="image/webp">
+              <img src="assets/photo-08.jpg" alt="Solo runner navigating a bridge at sunrise in Manila" class="w-full h-full object-cover" loading="lazy" decoding="async">
+            </picture>
           </div>
         </div>
 
