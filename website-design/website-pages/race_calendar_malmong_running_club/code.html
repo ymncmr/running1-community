@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Race Calendar - Malmong Running Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1b24",
+                        "primary": "#1000c7",
+                        "on-secondary-fixed": "#001159",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container-low": "#f5f2ff",
+                        "secondary-fixed-dim": "#bac3ff",
+                        "surface-variant": "#e3e1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#8397fe",
+                        "surface-container-highest": "#e3e1ef",
+                        "surface-tint": "#3f42f1",
+                        "secondary": "#4256b9",
+                        "on-secondary-container": "#0e288e",
+                        "surface": "#fcf8ff",
+                        "primary-container": "#2f2fe4",
+                        "tertiary": "#721800",
+                        "outline-variant": "#c6c4d9",
+                        "secondary-fixed": "#dee1ff",
+                        "on-tertiary-container": "#ffb19d",
+                        "inverse-on-surface": "#f2effd",
+                        "surface-container": "#efecfa",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-container": "#9b2400",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#273ca0",
+                        "surface-dim": "#dbd8e6",
+                        "inverse-primary": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "outline": "#767588",
+                        "on-surface": "#1b1b24",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#891f00",
+                        "on-surface-variant": "#454556",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#bdbfff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf8ff",
+                        "on-primary-fixed": "#04006d",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed-variant": "#201cdb",
+                        "inverse-surface": "#302f3a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Lexend"],
+                        "headline-md": ["Anybody"],
+                        "body-lg": ["Lexend"],
+                        "display-xl": ["Anybody"],
+                        "headline-lg": ["Anybody"],
+                        "label-caps": ["Anybody"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        .deep-shadow {
+            box-shadow: 0 20px 50px -12px rgba(26, 25, 83, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)] dark:shadow-none shadow-lg">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+<div class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface dark:text-on-surface">
+                Malmong Running Club
+            </div>
+<nav class="hidden md:flex gap-md">
+<a class="text-on-surface-variant dark:text-outline font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-outline font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-outline font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Events</a>
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary dark:border-primary-fixed pb-1" href="#">Calendar</a>
+<a class="text-on-surface-variant dark:text-outline font-medium hover:text-primary dark:hover:text-primary-fixed transition-colors duration-300" href="#">Contact</a>
+</nav>
+<button class="bg-primary-container text-on-primary-container px-md py-sm rounded-full font-label-caps text-label-caps hover:bg-primary hover:text-on-primary transition-colors duration-300 active:scale-95">
+                Join
+            </button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow max-w-container-max mx-auto px-gutter w-full py-xl space-y-xl">
+<!-- Page Header -->
+<section class="text-center space-y-sm">
+<h1 class="font-display-xl text-display-xl text-primary">Race Calendar</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Track your upcoming races, community jogs, and major athletic events across the Philippines. Stay in motion.</p>
+</section>
+<!-- Featured Highlights (Bento Grid) -->
+<section>
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<h2 class="font-headline-md text-headline-md text-on-background">Featured Upcoming Races</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Large Featured Card -->
+<div class="md:col-span-2 bg-surface-container-lowest rounded-[24px] overflow-hidden deep-shadow group cursor-pointer relative h-[400px]">
+<img alt="Marathon runners at the starting line" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A high-energy, premium photographic shot of marathon runners at a massive starting line in Manila. The lighting is bright and crisp, showcasing a light-mode athletic aesthetic. Vibrant blue accents from the club's colors pop against the warm morning sun. The scene conveys a sense of forward motion, anticipation, and community spirit in a modern, clean environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAluQeGF3iB0wn8QKTZhiLBCB0KOx9JrM8khG0WFQPC-USht37V37tux8THz1YcvP8Idx_7hz_BVmJ3rYtKbm7WmSvByvUhnJnRqbrKLEmRsqrFXL5YHf6AKn52n5azWipgpoUTCkaKqJyKKM1eW614FkSQQzH43yNGUKMoDDzQFnm6P3vQ9FCji0Q6DczQCn9-aO7HHEHsKU8vmJ6eGQsPMBeol9mPH0du588fOKYiNIZ6H_l7_TQn8sWamfef1BTRf6lQP5VnRzU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#1b1b24]/90 via-[#1b1b24]/40 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg w-full text-surface-container-lowest">
+<div class="flex gap-sm mb-sm">
+<span class="bg-primary-container text-on-primary-container px-sm py-xs rounded-full font-label-caps text-label-caps">Major Marathon</span>
+<span class="bg-surface-container-low/20 backdrop-blur-md text-surface-container-lowest px-sm py-xs rounded-full font-label-caps text-label-caps">Nov 12</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg mb-xs">Manila Metro Marathon</h3>
+<p class="font-body-lg text-body-lg opacity-90">42K • 21K • 10K | Quirino Grandstand</p>
+</div>
+</div>
+<!-- Vertical Stack Cards -->
+<div class="flex flex-col gap-md">
+<div class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col justify-between h-full border border-surface-variant">
+<div>
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-secondary-container text-on-secondary-container px-sm py-xs rounded-full font-label-caps text-label-caps text-[10px]">Trail Run</span>
+<span class="font-headline-md text-headline-md text-secondary">Oct 28</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-background text-[24px] leading-tight mb-xs">Rizal Mountain Trail</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Antipolo, Rizal</p>
+</div>
+<div class="flex items-center gap-xs text-primary font-label-caps text-label-caps mt-md group cursor-pointer">
+                            View Details
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col justify-between h-full border border-surface-variant">
+<div>
+<div class="flex justify-between items-start mb-sm">
+<span class="bg-tertiary-container text-on-tertiary-container px-sm py-xs rounded-full font-label-caps text-label-caps text-[10px]">Community</span>
+<span class="font-headline-md text-headline-md text-tertiary">Oct 15</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-background text-[24px] leading-tight mb-xs">Malmong Recovery Jog</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">BGC Greenway Park</p>
+</div>
+<div class="flex items-center gap-xs text-primary font-label-caps text-label-caps mt-md group cursor-pointer">
+                            View Details
+                            <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Calendar Section -->
+<section class="bg-surface-container-lowest rounded-[24px] p-lg deep-shadow">
+<!-- Calendar Controls -->
+<div class="flex flex-col md:flex-row justify-between items-center mb-lg gap-md">
+<div class="flex items-center gap-md">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<h2 class="font-headline-lg text-headline-lg text-on-background w-48 text-center">October 2024</h2>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Legend -->
+<div class="flex gap-sm">
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+<span class="font-label-caps text-label-caps text-[12px] text-on-surface-variant">Race</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-secondary-container"></div>
+<span class="font-label-caps text-label-caps text-[12px] text-on-surface-variant">Trail</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="w-3 h-3 rounded-full bg-tertiary-container"></div>
+<span class="font-label-caps text-label-caps text-[12px] text-on-surface-variant">Community</span>
+</div>
+</div>
+</div>
+<!-- Calendar Grid -->
+<div class="grid grid-cols-7 gap-base mb-sm">
+<!-- Days Header -->
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Sun</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Mon</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Tue</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Wed</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Thu</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Fri</div>
+<div class="font-label-caps text-label-caps text-center text-outline py-sm">Sat</div>
+</div>
+<div class="grid grid-cols-7 gap-base">
+<!-- Empty slots for alignment -->
+<div class="min-h-[120px] bg-surface-container-low/50 rounded-lg p-sm border border-transparent"></div>
+<div class="min-h-[120px] bg-surface-container-low/50 rounded-lg p-sm border border-transparent"></div>
+<!-- Day Cells -->
+<!-- Day 1 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">1</span>
+</div>
+<!-- Day 2 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">2</span>
+</div>
+<!-- Day 3 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">3</span>
+<div class="mt-xs p-xs bg-tertiary-container/30 text-tertiary rounded text-[10px] font-label-caps truncate">Track Work</div>
+</div>
+<!-- Day 4 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">4</span>
+</div>
+<!-- Day 5 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">5</span>
+</div>
+<!-- Day 6 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">6</span>
+</div>
+<!-- Day 7 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-primary/50 relative shadow-[0_4px_12px_rgba(47,47,228,0.1)] group cursor-pointer">
+<div class="absolute top-sm right-sm w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+<span class="font-headline-md text-[20px] text-primary">7</span>
+<div class="mt-xs p-xs bg-primary-container text-on-primary-container rounded text-[10px] font-label-caps truncate">BGC City Run 10K</div>
+</div>
+<!-- Day 8 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">8</span>
+</div>
+<!-- Day 9 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">9</span>
+</div>
+<!-- Day 10 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">10</span>
+</div>
+<!-- Day 11 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">11</span>
+</div>
+<!-- Day 12 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">12</span>
+<div class="mt-xs p-xs bg-tertiary-container/30 text-tertiary rounded text-[10px] font-label-caps truncate">Hill Repeats</div>
+</div>
+<!-- Day 13 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">13</span>
+</div>
+<!-- Day 14 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer bg-surface-container-high">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">14</span>
+<div class="mt-xs p-xs bg-secondary-container text-on-secondary-container rounded text-[10px] font-label-caps truncate">Nuvali Trail Series</div>
+</div>
+<!-- Day 15 -->
+<div class="min-h-[120px] bg-surface-container-low rounded-lg p-sm border border-transparent hover:border-primary/30 transition-colors group cursor-pointer">
+<span class="font-headline-md text-[20px] text-on-surface-variant group-hover:text-primary transition-colors">15</span>
+<div class="mt-xs p-xs bg-tertiary-container/30 text-tertiary rounded text-[10px] font-label-caps truncate">Recovery Jog</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high dark:bg-surface-container-lowest w-full border-t border-outline-variant dark:border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="space-y-sm">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface dark:text-on-surface">
+                    Malmong Running Club
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-outline opacity-90">
+                    © 2024 Malmong Running Club. Built for the forward motion.
+                </p>
+</div>
+<nav class="flex flex-col md:flex-row gap-lg">
+<div class="flex flex-col gap-sm">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-2 underline-offset-8 transition-all" href="#">Terms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-2 underline-offset-8 transition-all" href="#">Privacy</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-2 underline-offset-8 transition-all" href="#">Strava</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed hover:underline decoration-2 underline-offset-8 transition-all" href="#">Community Guidelines</a>
+</div>
+</nav>
+</div>
+</footer>
+</body></html>

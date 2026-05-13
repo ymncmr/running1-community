@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Events – Malmong Running Club</title>
+  <meta name="description" content="Find your next starting line. Browse Malmong Running Club's upcoming races, social runs, tempo workouts, and long runs across the Philippines.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#1b1b24","primary": "#1000c7","primary-fixed": "#e1e0ff",
+            "surface-container-low": "#f5f2ff","surface-variant": "#e3e1ef",
+            "surface-container-lowest": "#ffffff","secondary-container": "#8397fe",
+            "surface-container-highest": "#e3e1ef","secondary": "#4256b9",
+            "on-secondary-container": "#0e288e","surface": "#fcf8ff",
+            "primary-container": "#2f2fe4","tertiary": "#721800","outline-variant": "#c6c4d9",
+            "inverse-on-surface": "#f2effd","surface-container": "#efecfa",
+            "primary-fixed-dim": "#c0c1ff","tertiary-container": "#9b2400",
+            "on-secondary": "#ffffff","outline": "#767588","on-surface": "#1b1b24",
+            "surface-container-high": "#e9e6f5","background": "#fcf8ff",
+            "on-surface-variant": "#454556","on-primary": "#ffffff",
+            "on-primary-container": "#bdbfff","on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#201cdb","on-secondary-fixed-variant": "#273ca0",
+            "on-tertiary-container": "#ffb19d","inverse-surface": "#302f3a"
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          spacing: {
+            xl: "80px", base: "8px", lg: "48px", md: "24px",
+            sm: "12px", xs: "4px", "container-max": "1280px", gutter: "24px"
+          },
+          fontFamily: {
+            "body-md": ["Lexend"],"headline-md": ["Anybody"],"body-lg": ["Lexend"],
+            "display-xl": ["Anybody"],"headline-lg": ["Anybody"],"label-caps": ["Anybody"]
+          },
+          fontSize: {
+            "body-md": ["16px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],
+            "headline-md": ["32px",{lineHeight:"1.2",letterSpacing:"0.02em",fontWeight:"700"}],
+            "body-lg": ["18px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],
+            "display-xl": ["80px",{lineHeight:"1.0",letterSpacing:"-0.04em",fontWeight:"800"}],
+            "headline-lg": ["48px",{lineHeight:"1.1",letterSpacing:"-0.02em",fontWeight:"700"}],
+            "label-caps": ["14px",{lineHeight:"1.2",letterSpacing:"0.1em",fontWeight:"600"}]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Navigation -->
+  <nav class="bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)]">
+    <div class="flex justify-between items-center max-w-[1280px] mx-auto px-gutter h-[80px]">
+      <a href="index.html" class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity">Malmong Running Club</a>
+      <div class="hidden md:flex items-center gap-md">
+        <a href="index.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Home</a>
+        <a href="about.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">About</a>
+        <a href="events.html" class="text-primary font-bold border-b-2 border-primary pb-1">Events</a>
+        <a href="calendar.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Calendar</a>
+        <a href="contact.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Contact</a>
+      </div>
+      <div class="flex items-center gap-sm">
+        <a href="join.html" class="bg-primary-container text-on-primary font-label-caps text-label-caps px-md py-sm rounded-full min-h-[56px] flex items-center hover:bg-primary transition-colors shadow-md">Join</a>
+        <button id="menu-btn" class="md:hidden text-on-surface p-xs" aria-label="Open menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-surface border-t border-outline-variant/30">
+      <div class="flex flex-col px-gutter py-md gap-sm">
+        <a href="index.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">About</a>
+        <a href="events.html" class="font-label-caps text-label-caps text-primary py-sm">Events</a>
+        <a href="calendar.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Calendar</a>
+        <a href="contact.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="w-full">
+
+    <!-- Page Header -->
+    <section class="max-w-[1280px] mx-auto px-gutter py-xl">
+      <h1 class="font-display-xl text-[clamp(48px,8vw,80px)] text-primary mb-md leading-none" style="font-family: Anybody; font-weight: 800;">Upcoming<br>Races &amp; Runs</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">Find your next starting line. From casual weekend coffee runs to competitive marathons, discover the events pushing our community forward.</p>
+
+      <!-- Filter Chips -->
+      <div class="flex flex-wrap items-center gap-sm">
+        <span class="font-label-caps text-label-caps text-on-surface-variant mr-sm">FILTER:</span>
+        <button data-filter="all" class="filter-chip bg-primary text-on-primary font-label-caps text-label-caps px-md py-sm rounded-full active:scale-95 transition-transform">ALL EVENTS</button>
+        <button data-filter="social" class="filter-chip bg-surface-container text-on-surface font-label-caps text-label-caps px-md py-sm rounded-full hover:bg-surface-container-high active:scale-95 transition-all">SOCIAL RUNS</button>
+        <button data-filter="tempo" class="filter-chip bg-surface-container text-on-surface font-label-caps text-label-caps px-md py-sm rounded-full hover:bg-surface-container-high active:scale-95 transition-all">TEMPO WORKOUTS</button>
+        <button data-filter="long" class="filter-chip bg-surface-container text-on-surface font-label-caps text-label-caps px-md py-sm rounded-full hover:bg-surface-container-high active:scale-95 transition-all">LONG RUNS</button>
+        <button data-filter="race" class="filter-chip bg-surface-container text-on-surface font-label-caps text-label-caps px-md py-sm rounded-full hover:bg-surface-container-high active:scale-95 transition-all">RACES</button>
+      </div>
+    </section>
+
+    <!-- Events Grid -->
+    <section class="max-w-[1280px] mx-auto px-gutter pb-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+
+        <!-- Event Card 1 – Featured Marathon -->
+        <div data-event-wrapper class="col-span-1 md:col-span-2 lg:col-span-2">
+          <div data-event-type="race" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-64 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-06.jpg" alt="Thousands of runners at the start line of the Manila City Center Marathon" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">MARATHON</div>
+            </div>
+            <div class="flex justify-between items-start mb-sm">
+              <span class="font-label-caps text-label-caps text-secondary">SUN, MAY 26 • 6:30 AM</span>
+              <div class="flex items-center gap-xs text-on-surface-variant bg-surface-container rounded-full px-sm py-xs">
+                <span class="material-symbols-outlined text-[16px]">distance</span>
+                <span class="font-label-caps text-label-caps">42.2 KM</span>
+              </div>
+            </div>
+            <h2 class="font-headline-lg text-[40px] text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Clark Sun Run — Full &amp; Half</h2>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-md max-w-xl">The pinnacle event of our season. Malmong RC will have a dedicated cheering zone and pacers for every wave. Join thousands of runners pushing their limits through the Clark Freeport Zone.</p>
+            <a href="join.html" class="mt-auto bg-primary-container text-on-primary min-h-[56px] w-full md:w-auto px-xl rounded-full font-label-caps text-label-caps flex items-center justify-center gap-sm hover:bg-primary transition-colors group">
+              REGISTER FOR EVENT <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings:'FILL' 1;">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Event Card 2 – Tempo -->
+        <div data-event-wrapper>
+          <div data-event-type="tempo" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-48 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-07.jpg" alt="Runner performing a tempo workout at dawn along a scenic riverside path" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">TEMPO</div>
+            </div>
+            <span class="font-label-caps text-label-caps text-secondary mb-xs block">THU, MAY 22 • 6:00 AM</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Riverfront Thresholds</h3>
+            <div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">timer</span>
+                <span class="font-body-md text-body-md">60 Min</span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">speed</span>
+                <span class="font-body-md text-body-md">Hard Effort</span>
+              </div>
+            </div>
+            <a href="join.html" class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">RSVP</a>
+          </div>
+        </div>
+
+        <!-- Event Card 3 – Social -->
+        <div data-event-wrapper>
+          <div data-event-type="social" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-48 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-08.jpg" alt="Diverse group of runners laughing and stretching together before a social run in a sunny park" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">SOCIAL</div>
+            </div>
+            <span class="font-label-caps text-label-caps text-secondary mb-xs block">SAT, MAY 17 • 7:00 AM</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Weekend Coffee Shakeout</h3>
+            <div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">distance</span>
+                <span class="font-body-md text-body-md">5K</span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">local_cafe</span>
+                <span class="font-body-md text-body-md">Post-run Cafe</span>
+              </div>
+            </div>
+            <a href="join.html" class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">RSVP</a>
+          </div>
+        </div>
+
+        <!-- Event Card 4 – Long Run / Trail -->
+        <div data-event-wrapper>
+          <div data-event-type="long" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-48 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-09.jpg" alt="Trail runner navigating an elevated mountain path surrounded by lush forest in the Philippines" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">LONG RUN</div>
+            </div>
+            <span class="font-label-caps text-label-caps text-secondary mb-xs block">SUN, MAY 18 • 5:30 AM</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Baguio Peak Trail Elevation</h3>
+            <div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">landscape</span>
+                <span class="font-body-md text-body-md">22 KM</span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">terrain</span>
+                <span class="font-body-md text-body-md">850m Gain</span>
+              </div>
+            </div>
+            <a href="join.html" class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">RSVP</a>
+          </div>
+        </div>
+
+        <!-- Event Card 5 – Track Speed -->
+        <div data-event-wrapper>
+          <div data-event-type="tempo" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-48 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-10.jpg" alt="Runners competing in a track speed workout under stadium lights at night" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">TRACK</div>
+            </div>
+            <span class="font-label-caps text-label-caps text-secondary mb-xs block">TUE, MAY 20 • 6:30 PM</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Speed Intervals Under the Lights</h3>
+            <div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">stadium</span>
+                <span class="font-body-md text-body-md">BGC High School Track</span>
+              </div>
+            </div>
+            <a href="join.html" class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">RSVP</a>
+          </div>
+        </div>
+
+        <!-- Event Card 6 – Recovery Social Run -->
+        <div data-event-wrapper class="col-span-1 md:col-span-2 lg:col-span-1">
+          <div data-event-type="social" class="bg-surface-container-lowest rounded-[24px] p-md deep-shadow flex flex-col group h-full">
+            <div class="w-full h-48 rounded-[16px] overflow-hidden relative mb-md img-hover">
+              <img src="assets/photo-02.jpg" alt="Malmong Running Club members on a relaxed recovery run enjoying the morning atmosphere" class="w-full h-full object-cover">
+              <div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">RECOVERY</div>
+            </div>
+            <span class="font-label-caps text-label-caps text-secondary mb-xs block">SUN, MAY 24 • 7:00 AM</span>
+            <h3 class="font-headline-md text-headline-md text-on-surface mb-sm" style="font-family: Anybody; font-weight: 700;">Malmong Easy Miles</h3>
+            <div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">distance</span>
+                <span class="font-body-md text-body-md">8–12 KM</span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-xs">
+                <span class="material-symbols-outlined text-[18px]">favorite</span>
+                <span class="font-body-md text-body-md">Easy Effort</span>
+              </div>
+            </div>
+            <a href="join.html" class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">RSVP</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="bg-surface-container py-xl">
+      <div class="max-w-[1280px] mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-lg">
+        <div>
+          <h2 class="font-headline-lg text-[40px] text-on-background mb-sm" style="font-family: Anybody; font-weight: 700;">Never miss a run.</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">Get event notifications and weekly schedules straight to your inbox.</p>
+        </div>
+        <a href="join.html" class="flex-shrink-0 bg-primary-container text-on-primary font-label-caps text-label-caps px-lg py-sm rounded-full min-h-[56px] flex items-center justify-center hover:bg-primary transition-all deep-shadow hover:-translate-y-1 whitespace-nowrap">Join the Club</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-high border-t border-outline-variant w-full">
+    <div class="max-w-[1280px] mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+      <div class="flex flex-col gap-sm max-w-xs">
+        <a href="index.html" class="font-headline-md text-headline-md font-extrabold text-on-surface hover:opacity-80 transition-opacity" style="font-family: Anybody; font-weight: 800;">Malmong Running Club</a>
+        <p class="font-body-md text-body-md text-on-surface-variant">© 2024 Malmong Running Club. Built for the forward motion.</p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-lg font-label-caps text-label-caps">
+        <div class="flex flex-col gap-sm">
+          <a href="about.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">About Us</a>
+          <a href="events.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Events</a>
+          <a href="calendar.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Race Calendar</a>
+        </div>
+        <div class="flex flex-col gap-sm">
+          <a href="contact.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Contact Us</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Strava</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Terms</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

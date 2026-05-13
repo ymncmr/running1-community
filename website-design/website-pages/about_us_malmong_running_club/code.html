@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About - Malmong Running Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1b24",
+                        "primary": "#1000c7",
+                        "on-secondary-fixed": "#001159",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container-low": "#f5f2ff",
+                        "secondary-fixed-dim": "#bac3ff",
+                        "surface-variant": "#e3e1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#8397fe",
+                        "surface-container-highest": "#e3e1ef",
+                        "surface-tint": "#3f42f1",
+                        "secondary": "#4256b9",
+                        "on-secondary-container": "#0e288e",
+                        "surface": "#fcf8ff",
+                        "primary-container": "#2f2fe4",
+                        "tertiary": "#721800",
+                        "outline-variant": "#c6c4d9",
+                        "secondary-fixed": "#dee1ff",
+                        "on-tertiary-container": "#ffb19d",
+                        "inverse-on-surface": "#f2effd",
+                        "surface-container": "#efecfa",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-container": "#9b2400",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#273ca0",
+                        "surface-dim": "#dbd8e6",
+                        "inverse-primary": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "outline": "#767588",
+                        "on-surface": "#1b1b24",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#891f00",
+                        "on-surface-variant": "#454556",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#bdbfff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf8ff",
+                        "on-primary-fixed": "#04006d",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed-variant": "#201cdb",
+                        "inverse-surface": "#302f3a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["lexend"],
+                        "headline-md": ["anybody"],
+                        "body-lg": ["lexend"],
+                        "display-xl": ["anybody"],
+                        "headline-lg": ["anybody"],
+                        "label-caps": ["anybody"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container font-body-md text-body-md">
+<!-- TopNavBar -->
+<nav class="sticky top-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)]">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+<div class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface">
+                Malmong Running Club
+            </div>
+<div class="hidden md:flex items-center gap-md">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Events</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Calendar</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label-caps text-label-caps px-md py-sm rounded-full active:scale-95 transition-transform duration-200 min-h-[56px] flex items-center justify-center">
+                Join
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="py-xl px-gutter max-w-container-max mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-xl">
+<h1 class="font-display-xl text-display-xl text-primary mb-md">Our Story.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We are more than just a running club. We are a community built on the spirit of forward motion, deeply rooted in Filipino hospitality and the simple joy of moving together.</p>
+</div>
+<div class="rounded-2xl overflow-hidden h-[614px] w-full bg-surface-variant relative shadow-[0_30px_60px_-15px_rgba(26,25,83,0.12)]">
+<img alt="A large, diverse group of runners smiling and laughing together at sunrise in a scenic Philippine setting. The lighting is warm and golden, evoking a sense of joy and community. The style is modern, energetic, and high-contrast, fitting a premium athletic brand." class="w-full h-full object-cover" data-alt="A large, diverse group of runners smiling and laughing together at sunrise in a scenic Philippine setting. The lighting is warm and golden, evoking a sense of joy and community. The style is modern, energetic, and high-contrast, fitting a premium athletic brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCL99N4sIfER0SAXzHb7bp0vpvgW51BSZVzMn6Yfkt4sXh94gUTXsAWKfjmwoGhQqJkMgo5nKCU6fHaClcfYoaKp93X_YLhN6OG4RoVHa3QKwlRkMW4o4LhxqZcg0uc3lCEkZAV0kDkdEJ8nYz_hiXrTm82NamPikUcRrzMTiHHTnJ7ERQV1BnsUNZNalzBaBT0NLJlBLaKmUpw160rVQhAskrUAmWcDRbw_T9Q-33qBrFiPF4TH7CtjgLlTaNamOiRL8J7QKn-O7w"/>
+</div>
+</section>
+<!-- Values Section (Bento Grid) -->
+<section class="py-xl bg-surface-container-low px-gutter">
+<div class="max-w-container-max mx-auto">
+<div class="mb-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-sm">What Drives Us</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">The core principles that keep us moving forward, step by step.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest p-md rounded-2xl shadow-[0_20px_40px_-10px_rgba(26,25,83,0.08)]">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" style="font-variation-settings: 'FILL' 1;">directions_run</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-sm">Run for Fun</h3>
+<p class="text-on-surface-variant">Pace doesn't matter as much as the smiles. We celebrate the joy of movement over personal bests.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest p-md rounded-2xl shadow-[0_20px_40px_-10px_rgba(26,25,83,0.08)]">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" style="font-variation-settings: 'FILL' 1;">group</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-sm">Community First</h3>
+<p class="text-on-surface-variant">Nobody runs alone. We build connections that last far beyond the finish line.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest p-md rounded-2xl shadow-[0_20px_40px_-10px_rgba(26,25,83,0.08)]">
+<span class="material-symbols-outlined text-primary text-4xl mb-sm" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-sm">Filipino Hospitality</h3>
+<p class="text-on-surface-variant">Warm welcomes, post-run feasts, and a culture of inclusivity. Everyone is family here.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Alternating Section 1 -->
+<section class="py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-xl">
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-md">Rooted in Local Culture.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+                    Malmong Running Club started with a simple idea: bring the famous Filipino warmth to the running tracks. We blend the high-performance mindset of athletes with the laid-back, joyful spirit of our local communities.
+                </p>
+<div class="inline-flex items-center gap-sm bg-primary-fixed/30 text-primary-fixed-variant px-sm py-xs rounded-full font-label-caps text-label-caps">
+<span class="material-symbols-outlined text-sm">location_on</span>
+                    Proudly Philippine Based
+                </div>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-2xl overflow-hidden aspect-square bg-surface-variant shadow-[0_30px_60px_-15px_rgba(26,25,83,0.12)]">
+<img alt="A vibrant street scene in the Philippines with runners jogging past colorful local shops. The bright tropical sunlight casts long shadows, highlighting the energy and local flavor. The aesthetic is clean, light-mode, and premium athletic." class="w-full h-full object-cover" data-alt="A vibrant street scene in the Philippines with runners jogging past colorful local shops. The bright tropical sunlight casts long shadows, highlighting the energy and local flavor. The aesthetic is clean, light-mode, and premium athletic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlHjQkJNgIDxYb75TE4-Eh0KNAgAQ1oIr1POMNRFFg580NN7pWWYSXF1G_15jtLsiB0cOT3zaY5ZowyRsPX4-8kiZWiYnrSNIEZ7xX3EqFsmG8f0Tr7MGRZcoYlDhsC-AD7nJ5jfPjQqGw6Vt4bxwn66GLYzjVcnbUSai9rzXM59uQKJsGAqhwHHMxycI-LFDKCOeOTST4uLEGRBTS9ARKuraS4nro3e8a484LhFwWIo6DpoHz-z3yb2LNOjofUZ0gFc_C2a4tLIs"/>
+</div>
+</div>
+</section>
+<!-- Alternating Section 2 -->
+<section class="py-xl px-gutter max-w-container-max mx-auto flex flex-col md:flex-row-reverse items-center gap-xl">
+<div class="flex-1">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-md">The Post-Run Feast.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+                    We believe the best part of the run happens after the run. Sharing stories, laughing over local delicacies, and building bonds that strengthen our community.
+                </p>
+</div>
+<div class="flex-1 w-full">
+<div class="rounded-2xl overflow-hidden aspect-video bg-surface-variant shadow-[0_30px_60px_-15px_rgba(26,25,83,0.12)]">
+<img alt="Runners gathered around a table filled with Filipino food after a morning run, laughing and sharing a meal. The lighting is bright and cheerful, capturing the essence of community and hospitality. The image style aligns with a premium, inclusive athletic brand in light mode." class="w-full h-full object-cover" data-alt="Runners gathered around a table filled with Filipino food after a morning run, laughing and sharing a meal. The lighting is bright and cheerful, capturing the essence of community and hospitality. The image style aligns with a premium, inclusive athletic brand in light mode." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9i94UjwDn6QMkiquIzzIBvF3wTA_ZjyKEkP3qGwu83zGa3GGNi2YPOjHP9uUXBXl9HPbK8MwTo-zl_BcUQAzIR8bFusUWy7KiFbSb2EtelJpuEHKRCiI4YjeoeE7jR0nUItWbXbaiXr3TkItU6Zjmy5tEKJmkQLr3Fz4zOxgW0UHTu-IrjXD47qYck11AbkRmBcklf-GmfNLE_Lyvx-BfvDYZeWTTerBOKFLcR8Mv1ZVjNxPKj8Isz_xiukJdfvh6R3iuuWyNL3U"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-high border-t border-outline-variant">
+<div class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="flex flex-col gap-sm max-w-xs">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface">
+                    Malmong Running Club
+                </span>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    © 2024 Malmong Running Club. Built for the forward motion.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row gap-lg md:gap-xl font-label-caps text-label-caps">
+<div class="flex flex-col gap-sm">
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Terms</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Privacy</a>
+</div>
+<div class="flex flex-col gap-sm">
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Strava</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Community Guidelines</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

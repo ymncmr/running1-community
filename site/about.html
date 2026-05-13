@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us – Malmong Running Club</title>
+  <meta name="description" content="Learn the story behind Malmong Running Club — a Philippine running community rooted in Filipino warmth, inclusivity, and a love of forward motion.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&family=Lexend:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#1b1b24","primary": "#1000c7","primary-fixed": "#e1e0ff",
+            "surface-container-low": "#f5f2ff","surface-variant": "#e3e1ef",
+            "surface-container-lowest": "#ffffff","secondary-container": "#8397fe",
+            "surface-container-highest": "#e3e1ef","secondary": "#4256b9",
+            "on-secondary-container": "#0e288e","surface": "#fcf8ff",
+            "primary-container": "#2f2fe4","tertiary": "#721800","outline-variant": "#c6c4d9",
+            "inverse-on-surface": "#f2effd","surface-container": "#efecfa",
+            "primary-fixed-dim": "#c0c1ff","tertiary-container": "#9b2400",
+            "on-secondary": "#ffffff","outline": "#767588","on-surface": "#1b1b24",
+            "surface-container-high": "#e9e6f5","background": "#fcf8ff",
+            "on-surface-variant": "#454556","on-primary": "#ffffff",
+            "on-primary-container": "#bdbfff","on-tertiary": "#ffffff",
+            "on-primary-fixed-variant": "#201cdb","on-secondary-fixed-variant": "#273ca0",
+            "on-tertiary-container": "#ffb19d","inverse-surface": "#302f3a"
+          },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+          spacing: {
+            xl: "80px", base: "8px", lg: "48px", md: "24px",
+            sm: "12px", xs: "4px", "container-max": "1280px", gutter: "24px"
+          },
+          fontFamily: {
+            "body-md": ["Lexend"],"headline-md": ["Anybody"],"body-lg": ["Lexend"],
+            "display-xl": ["Anybody"],"headline-lg": ["Anybody"],"label-caps": ["Anybody"]
+          },
+          fontSize: {
+            "body-md": ["16px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],
+            "headline-md": ["32px",{lineHeight:"1.2",letterSpacing:"0.02em",fontWeight:"700"}],
+            "body-lg": ["18px",{lineHeight:"1.6",letterSpacing:"0",fontWeight:"400"}],
+            "display-xl": ["80px",{lineHeight:"1.0",letterSpacing:"-0.04em",fontWeight:"800"}],
+            "headline-lg": ["48px",{lineHeight:"1.1",letterSpacing:"-0.02em",fontWeight:"700"}],
+            "label-caps": ["14px",{lineHeight:"1.2",letterSpacing:"0.1em",fontWeight:"600"}]
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Navigation -->
+  <nav class="bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)]">
+    <div class="flex justify-between items-center max-w-[1280px] mx-auto px-gutter h-[80px]">
+      <a href="index.html" class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface hover:opacity-80 transition-opacity">Malmong Running Club</a>
+      <div class="hidden md:flex items-center gap-md">
+        <a href="index.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Home</a>
+        <a href="about.html" class="text-primary font-bold border-b-2 border-primary pb-1">About</a>
+        <a href="events.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Events</a>
+        <a href="calendar.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Calendar</a>
+        <a href="contact.html" class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300">Contact</a>
+      </div>
+      <div class="flex items-center gap-sm">
+        <a href="join.html" class="bg-primary-container text-on-primary font-label-caps text-label-caps px-md py-sm rounded-full min-h-[56px] flex items-center hover:bg-primary transition-colors shadow-md">Join</a>
+        <button id="menu-btn" class="md:hidden text-on-surface p-xs" aria-label="Open menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden bg-surface border-t border-outline-variant/30">
+      <div class="flex flex-col px-gutter py-md gap-sm">
+        <a href="index.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="font-label-caps text-label-caps text-primary py-sm">About</a>
+        <a href="events.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Events</a>
+        <a href="calendar.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Calendar</a>
+        <a href="contact.html" class="font-label-caps text-label-caps text-on-surface-variant py-sm hover:text-primary transition-colors">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="py-xl px-gutter max-w-[1280px] mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-xl">
+        <h1 class="font-display-xl text-[clamp(48px,8vw,80px)] text-primary mb-md leading-none" style="font-family: Anybody; font-weight: 800;">Our Story.</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">We are more than just a running club. We are a community built on the spirit of forward motion, deeply rooted in Filipino hospitality and the simple joy of moving together.</p>
+      </div>
+      <div class="rounded-[24px] overflow-hidden h-[480px] md:h-[614px] w-full bg-surface-variant relative deep-shadow">
+        <img src="assets/photo-03.jpg" alt="Large, diverse gathering of Malmong Running Club members at sunrise in a Philippine park" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-on-background/30 to-transparent"></div>
+      </div>
+    </section>
+
+    <!-- Values Section (Bento Grid) -->
+    <section class="py-xl bg-surface-container-low px-gutter">
+      <div class="max-w-[1280px] mx-auto">
+        <div class="mb-lg">
+          <h2 class="font-headline-lg text-[48px] text-on-background mb-sm" style="font-family: Anybody; font-weight: 700;">What Drives Us</h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">The core principles that keep us moving forward, step by step.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+          <div class="bg-surface-container-lowest p-md rounded-[24px] deep-shadow border border-outline-variant/20">
+            <span class="material-symbols-outlined text-primary text-4xl mb-sm block" style="font-variation-settings:'FILL' 1;">directions_run</span>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-sm" style="font-family: Anybody; font-weight: 700;">Run for Fun</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Pace doesn't matter as much as the smiles. We celebrate the joy of movement over personal bests.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-md rounded-[24px] deep-shadow border border-outline-variant/20">
+            <span class="material-symbols-outlined text-primary text-4xl mb-sm block" style="font-variation-settings:'FILL' 1;">group</span>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-sm" style="font-family: Anybody; font-weight: 700;">Community First</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Nobody runs alone. We build connections that last far beyond the finish line.</p>
+          </div>
+          <div class="bg-surface-container-lowest p-md rounded-[24px] deep-shadow border border-outline-variant/20">
+            <span class="material-symbols-outlined text-primary text-4xl mb-sm block" style="font-variation-settings:'FILL' 1;">favorite</span>
+            <h3 class="font-headline-md text-headline-md text-on-background mb-sm" style="font-family: Anybody; font-weight: 700;">Filipino Hospitality</h3>
+            <p class="text-on-surface-variant font-body-md text-body-md">Warm welcomes, post-run feasts, and a culture of inclusivity. Everyone is family here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alternating Section 1 -->
+    <section class="py-xl px-gutter max-w-[1280px] mx-auto flex flex-col md:flex-row items-center gap-xl">
+      <div class="flex-1">
+        <h2 class="font-headline-lg text-[48px] text-on-background mb-md" style="font-family: Anybody; font-weight: 700;">Rooted in Local Culture.</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">Malmong Running Club started with a simple idea: bring the famous Filipino warmth to the running tracks. We blend the high-performance mindset of athletes with the laid-back, joyful spirit of our local communities.</p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">From the streets of BGC to the mountain trails of Baguio, every kilometre we share is a celebration of who we are as a people.</p>
+        <div class="inline-flex items-center gap-sm bg-primary-fixed/30 text-on-primary-fixed-variant px-sm py-xs rounded-full font-label-caps text-label-caps">
+          <span class="material-symbols-outlined text-sm">location_on</span>
+          Proudly Philippine Based
+        </div>
+      </div>
+      <div class="flex-1 w-full">
+        <div class="rounded-[24px] overflow-hidden aspect-square bg-surface-variant deep-shadow img-hover">
+          <img src="assets/photo-004.jpg" alt="Runners training along the vibrant streets of Manila with the city skyline in the background" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Alternating Section 2 -->
+    <section class="py-xl px-gutter max-w-[1280px] mx-auto flex flex-col md:flex-row-reverse items-center gap-xl">
+      <div class="flex-1">
+        <h2 class="font-headline-lg text-[48px] text-on-background mb-md" style="font-family: Anybody; font-weight: 700;">The Post-Run Feast.</h2>
+        <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">We believe the best part of the run happens after the run. Sharing stories, laughing over local delicacies, and building bonds that strengthen our community with every shared meal.</p>
+        <p class="font-body-lg text-body-lg text-on-surface-variant">From siopao at the finish line to full breakfast spreads after long runs — eating together is part of who we are.</p>
+      </div>
+      <div class="flex-1 w-full">
+        <div class="rounded-[24px] overflow-hidden aspect-video bg-surface-variant deep-shadow img-hover">
+          <img src="assets/photo-05.jpg" alt="Malmong Running Club members sharing a post-run meal together, laughing and celebrating over Filipino food" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Statement Banner -->
+    <section class="py-xl bg-surface-container">
+      <div class="max-w-[1280px] mx-auto px-gutter text-center">
+        <span class="font-label-caps text-label-caps text-primary mb-md block">OUR MISSION</span>
+        <blockquote class="font-headline-lg text-[clamp(28px,4vw,48px)] text-on-background max-w-4xl mx-auto leading-snug" style="font-family: Anybody; font-weight: 700;">"To inspire a healthier lifestyle across the Philippines by transforming running from a chore into a rewarding, communal habit."</blockquote>
+        <div class="mt-xl flex flex-col sm:flex-row items-center justify-center gap-md">
+          <a href="join.html" class="bg-primary-container text-on-primary font-label-caps text-label-caps px-lg py-sm rounded-full min-h-[56px] flex items-center justify-center hover:bg-primary transition-all deep-shadow hover:-translate-y-1">Run With Us</a>
+          <a href="contact.html" class="text-primary font-label-caps text-label-caps px-lg py-sm rounded-full min-h-[56px] flex items-center justify-center border-2 border-primary/30 hover:border-primary transition-all">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-high border-t border-outline-variant w-full">
+    <div class="max-w-[1280px] mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+      <div class="flex flex-col gap-sm max-w-xs">
+        <a href="index.html" class="font-headline-md text-headline-md font-extrabold text-on-surface hover:opacity-80 transition-opacity" style="font-family: Anybody; font-weight: 800;">Malmong Running Club</a>
+        <p class="font-body-md text-body-md text-on-surface-variant">© 2024 Malmong Running Club. Built for the forward motion.</p>
+      </div>
+      <div class="flex flex-col md:flex-row gap-lg font-label-caps text-label-caps">
+        <div class="flex flex-col gap-sm">
+          <span class="text-on-surface font-bold mb-xs">Explore</span>
+          <a href="about.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">About Us</a>
+          <a href="events.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Events</a>
+          <a href="calendar.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Race Calendar</a>
+        </div>
+        <div class="flex flex-col gap-sm">
+          <span class="text-on-surface font-bold mb-xs">Connect</span>
+          <a href="contact.html" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Contact Us</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Strava Club</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Community Guidelines</a>
+        </div>
+        <div class="flex flex-col gap-sm">
+          <span class="text-on-surface font-bold mb-xs">Legal</span>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Terms</a>
+          <a href="#" class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all">Privacy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Malmong Running Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1b24",
+                        "primary": "#1000c7",
+                        "on-secondary-fixed": "#001159",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container-low": "#f5f2ff",
+                        "secondary-fixed-dim": "#bac3ff",
+                        "surface-variant": "#e3e1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#8397fe",
+                        "surface-container-highest": "#e3e1ef",
+                        "surface-tint": "#3f42f1",
+                        "secondary": "#4256b9",
+                        "on-secondary-container": "#0e288e",
+                        "surface": "#fcf8ff",
+                        "primary-container": "#2f2fe4",
+                        "tertiary": "#721800",
+                        "outline-variant": "#c6c4d9",
+                        "secondary-fixed": "#dee1ff",
+                        "on-tertiary-container": "#ffb19d",
+                        "inverse-on-surface": "#f2effd",
+                        "surface-container": "#efecfa",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-container": "#9b2400",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#273ca0",
+                        "surface-dim": "#dbd8e6",
+                        "inverse-primary": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "outline": "#767588",
+                        "on-surface": "#1b1b24",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#891f00",
+                        "on-surface-variant": "#454556",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#bdbfff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf8ff",
+                        "on-primary-fixed": "#04006d",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed-variant": "#201cdb",
+                        "inverse-surface": "#302f3a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["lexend"],
+                        "headline-md": ["anybody"],
+                        "body-lg": ["lexend"],
+                        "display-xl": ["anybody"],
+                        "headline-lg": ["anybody"],
+                        "label-caps": ["anybody"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)]">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+<div class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface">
+                Malmong Running Club
+            </div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Events</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Calendar</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden md:flex items-center justify-center min-h-[48px] px-md rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps hover:bg-primary transition-colors active:scale-95 duration-200 shadow-md">
+                    Join
+                </button>
+<button class="md:hidden text-on-surface p-sm">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto px-gutter py-xl flex flex-col gap-xl">
+<!-- Header -->
+<header class="flex flex-col gap-sm max-w-3xl">
+<h1 class="font-display-xl text-display-xl text-on-surface">Get in touch.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Whether you're looking to join a weekend long run, have a question about membership, or want to partner with us, drop us a line.</p>
+</header>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg items-start">
+<!-- Contact Form Card (Larger Span) -->
+<section class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)] p-md md:p-lg border border-outline-variant/30">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Send a Message</h2>
+<form class="flex flex-col gap-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="firstName">First Name</label>
+<input class="bg-surface-container-high border-none rounded-lg p-sm min-h-[48px] focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="firstName" placeholder="Eliud" type="text"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="lastName">Last Name</label>
+<input class="bg-surface-container-high border-none rounded-lg p-sm min-h-[48px] focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="lastName" placeholder="Kipchoge" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="email">Email Address</label>
+<input class="bg-surface-container-high border-none rounded-lg p-sm min-h-[48px] focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="email" placeholder="runner@example.com" type="email"/>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="topic">Topic</label>
+<select class="bg-surface-container-high border-none rounded-lg p-sm min-h-[48px] focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all text-on-surface" id="topic">
+<option>Membership Inquiry</option>
+<option>Event Sponsorship</option>
+<option>General Question</option>
+</select>
+</div>
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant" for="message">Message</label>
+<textarea class="bg-surface-container-high border-none rounded-lg p-sm focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all resize-none" id="message" placeholder="How can we help you hit your stride?" rows="5"></textarea>
+</div>
+<button class="mt-sm bg-primary-container text-on-primary-container min-h-[56px] rounded-lg font-label-caps text-label-caps w-full md:w-auto md:self-start px-lg hover:bg-primary transition-colors shadow-md" type="submit">
+                        Send Message
+                    </button>
+</form>
+</section>
+<!-- Sidebar Content -->
+<div class="lg:col-span-5 flex flex-col gap-lg">
+<!-- Meet-up Locations Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)] p-md border border-outline-variant/30 relative overflow-hidden group">
+<div class="absolute inset-0 z-0 opacity-20 transition-opacity duration-500 group-hover:opacity-30">
+<img alt="Map" class="w-full h-full object-cover" data-alt="A highly detailed top-down view of a modern urban city grid map at sunrise. The lighting is warm and golden, casting soft long shadows across stylized city blocks and roads. The aesthetic aligns with a premium, clean light-mode interface, utilizing a cohesive palette of soft whites, light grays, and subtle energetic blue accents to represent routes. The mood is active and inviting, perfect for a high-performance athletic platform." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFf-MIpv5yGoH_bvmZUextoqKtUzHmanYSbmPUY0rtTFu2do5K5JV-B_quCFirFme7psZFXearZ57JbwRJ0o9Y6XvfQI1q3e4Zx6W6uD2ENKDcJ0hxqJSwgM16Xa4XPjIJNmqdJmKBQuOtVrzPnBSCO5LdeQI-sQaRPHCvXvKcux125-9gIfzJGNzbvX51cJXnhyQdfdhYnKoTjX5PbPGlmf5cZyQg3lSIi59z9e8rh_xZlDqzTjFN2xBi1QAAugpwf96xeZvyEVk"/>
+</div>
+<div class="relative z-10">
+<div class="flex items-center gap-sm mb-md">
+<span class="material-symbols-outlined text-primary-container text-[32px]" data-icon="location_on" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<h3 class="font-headline-md text-[24px] font-bold text-on-surface leading-tight">Weekly Meet-ups</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">Join our core crew across the Philippines for structured workouts and social miles.</p>
+<ul class="flex flex-col gap-sm">
+<li class="flex items-start gap-sm bg-surface/80 backdrop-blur-sm p-sm rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-outline mt-xs text-[20px]" data-icon="stadium">stadium</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">BGC, Metro Manila</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Tuesdays 6:00 AM - Track Intervals</p>
+</div>
+</li>
+<li class="flex items-start gap-sm bg-surface/80 backdrop-blur-sm p-sm rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-outline mt-xs text-[20px]" data-icon="directions_run">directions_run</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Cebu IT Park, Cebu</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Thursdays 6:30 PM - Tempo Run</p>
+</div>
+</li>
+<li class="flex items-start gap-sm bg-surface/80 backdrop-blur-sm p-sm rounded-lg border border-outline-variant/50">
+<span class="material-symbols-outlined text-outline mt-xs text-[20px]" data-icon="landscape">landscape</span>
+<div>
+<h4 class="font-label-caps text-label-caps text-on-surface">Camp John Hay, Baguio</h4>
+<p class="font-body-md text-[14px] text-on-surface-variant">Sundays 5:30 AM - Long Trail Run</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<!-- Socials Card -->
+<section class="bg-surface-container-lowest rounded-xl shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)] p-md border border-outline-variant/30 flex flex-col gap-md">
+<h3 class="font-headline-md text-[24px] font-bold text-on-surface leading-tight">Connect With Us</h3>
+<div class="flex flex-wrap gap-sm">
+<a class="flex items-center gap-xs bg-surface-container-high px-md py-sm rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors group border border-outline-variant/50" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-on-primary-container text-on-surface-variant" data-icon="forum">forum</span>
+<span class="font-label-caps text-label-caps">Strava Club</span>
+</a>
+<a class="flex items-center gap-xs bg-surface-container-high px-md py-sm rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors group border border-outline-variant/50" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-on-primary-container text-on-surface-variant" data-icon="photo_camera">photo_camera</span>
+<span class="font-label-caps text-label-caps">Instagram</span>
+</a>
+<a class="flex items-center gap-xs bg-surface-container-high px-md py-sm rounded-full hover:bg-primary-container hover:text-on-primary-container transition-colors group border border-outline-variant/50" href="#">
+<span class="material-symbols-outlined text-[20px] group-hover:text-on-primary-container text-on-surface-variant" data-icon="groups">groups</span>
+<span class="font-label-caps text-label-caps">Facebook Group</span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<!-- FAQ Preview -->
+<section class="bg-surface-container-high rounded-xl p-md md:p-lg flex flex-col gap-md mt-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Quick Answers</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-xs">Do I need to be fast to join?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Not at all. We have pacing groups for all levels, from 4:00/km flyers to run-walk beginners. The focus is on forward motion.</p>
+</div>
+<div class="bg-surface-container-lowest p-md rounded-lg shadow-sm">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-xs">Is there a membership fee?</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Our core weekly community runs are free. We offer premium memberships for specialized track coaching and exclusive club gear.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high border-t border-outline-variant w-full mt-xl">
+<div class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="flex flex-col gap-sm">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface">
+                    Malmong Running Club
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                    © 2024 Malmong Running Club. Built for the forward motion.
+                </p>
+</div>
+<div class="flex flex-col gap-sm">
+<nav class="flex flex-col gap-sm">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Terms</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Privacy</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Strava</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all opacity-90 hover:opacity-100" href="#">Community Guidelines</a>
+</nav>
+</div>
+</div>
+</footer>
+</body></html>

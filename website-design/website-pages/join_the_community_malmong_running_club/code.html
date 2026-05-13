@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Join Community - Malmong Running Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Lexend:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1b24",
+                        "primary": "#1000c7",
+                        "on-secondary-fixed": "#001159",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container-low": "#f5f2ff",
+                        "secondary-fixed-dim": "#bac3ff",
+                        "surface-variant": "#e3e1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#8397fe",
+                        "surface-container-highest": "#e3e1ef",
+                        "surface-tint": "#3f42f1",
+                        "secondary": "#4256b9",
+                        "on-secondary-container": "#0e288e",
+                        "surface": "#fcf8ff",
+                        "primary-container": "#2f2fe4",
+                        "tertiary": "#721800",
+                        "outline-variant": "#c6c4d9",
+                        "secondary-fixed": "#dee1ff",
+                        "on-tertiary-container": "#ffb19d",
+                        "inverse-on-surface": "#f2effd",
+                        "surface-container": "#efecfa",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-container": "#9b2400",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#273ca0",
+                        "surface-dim": "#dbd8e6",
+                        "inverse-primary": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "outline": "#767588",
+                        "on-surface": "#1b1b24",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#891f00",
+                        "on-surface-variant": "#454556",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#bdbfff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf8ff",
+                        "on-primary-fixed": "#04006d",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed-variant": "#201cdb",
+                        "inverse-surface": "#302f3a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Lexend"],
+                        "headline-md": ["Anybody"],
+                        "body-lg": ["Lexend"],
+                        "display-xl": ["Anybody"],
+                        "headline-lg": ["Anybody"],
+                        "label-caps": ["Anybody"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ambient-shadow {
+            box-shadow: 0 20px 50px -12px rgba(26, 25, 83, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md antialiased">
+<!-- Suppressed TopNavBar for Linear/Transactional Flow -->
+<!-- Main Content -->
+<main class="flex-grow flex items-center justify-center py-xl px-gutter">
+<div class="max-w-container-max w-full grid grid-cols-1 lg:grid-cols-2 gap-lg items-center">
+<!-- Visual / Encouragement Side -->
+<div class="order-2 lg:order-1 flex flex-col gap-md">
+<div class="mb-md">
+<a class="inline-flex items-center gap-sm text-primary hover:text-on-primary-fixed-variant transition-colors group mb-lg" href="#">
+<span class="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+<span class="font-label-caps text-label-caps uppercase">Back to Home</span>
+</a>
+<h1 class="font-display-xl text-display-xl text-on-surface mb-sm tracking-tighter">Run With Us.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">Everyone is welcome. Whether you are aiming for a sub-3 marathon or just taking your first steps, start running with us today.</p>
+</div>
+<!-- Image Grid -->
+<div class="grid grid-cols-2 gap-sm">
+<div class="rounded-xl overflow-hidden aspect-square ambient-shadow relative group">
+<img alt="Smiling runners" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A dynamic, high-quality photograph of a diverse group of runners smiling brightly as they run together along a scenic coastal path in the Philippines. The morning light casts a warm, energetic glow on their faces, highlighting the sense of community and forward motion. The scene embodies a premium athletic lifestyle, captured with a clean, vibrant color palette that perfectly complements a light-mode, modern fitness platform aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGOSYbX5HjuvnM70EZMAXiqjEUuR5eXznN1W7ir1YL4_pyBQPTirKHj8VqsSEjtyki8cZu5ec8QTgl0Ac_OOP3O-_4kBdKu72V0wqf6TBFQnMWVFYFKWS70Z-TEdvipahjZlRLQxCBdQoCC48CDFo9kn0G6LRm3paJ2-S--tqoUjDnr2NLkizNEg_eoiO0Y7MQK2Fud9nbW5aN5zQrI3VcOYj4IbxyK1cbRK_MozJcRXlvZ-DekV2QUfCaMHsr7-5Qg99mrJ3byYg"/>
+</div>
+<div class="rounded-xl overflow-hidden aspect-[4/5] ambient-shadow relative group mt-lg">
+<img alt="Urban running" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="An inspiring vertical shot of a solo runner confidently navigating an urban bridge at sunrise in Manila. The architectural lines of the bridge provide a strong leading perspective, while the soft, early morning light creates long, dramatic shadows. The image conveys a sense of determination and premium technical focus, utilizing a balanced palette of deep shadows and bright highlights consistent with a high-contrast modern design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf2UNiOyOTGv4KgKZFQnEV6taYoTTzZ4i_0vkiGOEy-Dmjg5NPPGuCnRkhkM0ptChrE4a_Sbb7Ne4aK3EAQ153aKoJezhIIEhnRoEzFDzAPR7AkMkPXQ9gQ1KsQjPSjdkZ_xXnvtRhNtO5U7-hLDRo-PYS1F4cOCReHTGT3YbHD1d4X_FVs-juWSTmly5qqJ1z-9eG9440Zfl7weVRxATIdnWxYL8zc6_HGC5vEw-SqBqTJjQTf_3U1kagQuA5nxcBhlyg0esIeHg"/>
+</div>
+</div>
+</div>
+<!-- Form Side -->
+<div class="order-1 lg:order-2 bg-surface-container-lowest rounded-[24px] p-lg ambient-shadow relative">
+<!-- Decorative element -->
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary-fixed rounded-full blur-3xl opacity-50 z-0"></div>
+<div class="relative z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-md">Join the Club</h2>
+<form class="flex flex-col gap-md">
+<!-- Name -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="name">Full Name</label>
+<input class="bg-surface-container-high border-none rounded-lg h-[56px] px-md font-body-md text-body-md text-on-surface placeholder:text-outline focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="name" name="name" placeholder="Juan Dela Cruz" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="email">Email Address</label>
+<input class="bg-surface-container-high border-none rounded-lg h-[56px] px-md font-body-md text-body-md text-on-surface placeholder:text-outline focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="email" name="email" placeholder="juan@example.com" required="" type="email"/>
+</div>
+<!-- Location -->
+<div class="flex flex-col gap-xs">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase" for="location">Location</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-md top-1/2 -translate-y-1/2 text-outline">location_on</span>
+<input class="bg-surface-container-high border-none rounded-lg h-[56px] pl-[56px] pr-md w-full font-body-md text-body-md text-on-surface placeholder:text-outline focus:ring-0 focus:border-b-2 focus:border-primary-container transition-all" id="location" name="location" placeholder="Metro Manila" required="" type="text"/>
+</div>
+</div>
+<!-- Experience Level -->
+<div class="flex flex-col gap-sm mt-sm">
+<label class="font-label-caps text-label-caps text-on-surface-variant uppercase">Experience Level</label>
+<div class="grid grid-cols-3 gap-sm">
+<label class="cursor-pointer relative">
+<input checked="" class="peer sr-only" name="experience" type="radio" value="beginner"/>
+<div class="h-[48px] rounded-lg border-2 border-surface-variant bg-surface flex items-center justify-center font-body-md text-body-md text-on-surface-variant peer-checked:border-primary-container peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed-variant transition-all hover:bg-surface-container-high">
+                                        Beginner
+                                    </div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="experience" type="radio" value="intermediate"/>
+<div class="h-[48px] rounded-lg border-2 border-surface-variant bg-surface flex items-center justify-center font-body-md text-body-md text-on-surface-variant peer-checked:border-primary-container peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed-variant transition-all hover:bg-surface-container-high">
+                                        Intermediate
+                                    </div>
+</label>
+<label class="cursor-pointer relative">
+<input class="peer sr-only" name="experience" type="radio" value="advanced"/>
+<div class="h-[48px] rounded-lg border-2 border-surface-variant bg-surface flex items-center justify-center font-body-md text-body-md text-on-surface-variant peer-checked:border-primary-container peer-checked:bg-primary-fixed peer-checked:text-on-primary-fixed-variant transition-all hover:bg-surface-container-high">
+                                        Advanced
+                                    </div>
+</label>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="mt-md h-[56px] rounded-full bg-primary-container text-on-primary font-label-caps text-label-caps uppercase hover:bg-primary transition-colors flex items-center justify-center gap-sm group" type="submit">
+<span>Join the Movement</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-center font-body-md text-body-md text-outline mt-xs text-[14px]">
+                            By joining, you agree to our Community Guidelines.
+                        </p>
+</form>
+</div>
+</div>
+</div>
+</main>
+<!-- Suppressed Footer for Linear/Transactional Flow -->
+</body></html>

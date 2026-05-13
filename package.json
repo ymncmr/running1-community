@@ -1,0 +1,9 @@
+{
+  "name": "malmong-running-club",
+  "version": "1.0.0",
+  "description": "Malmong Running Club – Philippine community running website",
+  "scripts": {
+    "serve": "npx serve site -p 3000",
+    "start": "npx serve site -p 3000"
+  }
+}

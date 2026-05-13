@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Events - Malmong Running Club</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@600;700;800&amp;family=Lexend:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-background": "#1b1b24",
+                        "primary": "#1000c7",
+                        "on-secondary-fixed": "#001159",
+                        "primary-fixed": "#e1e0ff",
+                        "surface-container-low": "#f5f2ff",
+                        "secondary-fixed-dim": "#bac3ff",
+                        "surface-variant": "#e3e1ef",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-container": "#8397fe",
+                        "surface-container-highest": "#e3e1ef",
+                        "surface-tint": "#3f42f1",
+                        "secondary": "#4256b9",
+                        "on-secondary-container": "#0e288e",
+                        "surface": "#fcf8ff",
+                        "primary-container": "#2f2fe4",
+                        "tertiary": "#721800",
+                        "outline-variant": "#c6c4d9",
+                        "secondary-fixed": "#dee1ff",
+                        "on-tertiary-container": "#ffb19d",
+                        "inverse-on-surface": "#f2effd",
+                        "surface-container": "#efecfa",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#3c0800",
+                        "primary-fixed-dim": "#c0c1ff",
+                        "tertiary-container": "#9b2400",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#273ca0",
+                        "surface-dim": "#dbd8e6",
+                        "inverse-primary": "#c0c1ff",
+                        "error": "#ba1a1a",
+                        "outline": "#767588",
+                        "on-surface": "#1b1b24",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed-dim": "#ffb4a1",
+                        "background": "#fcf8ff",
+                        "on-tertiary-fixed-variant": "#891f00",
+                        "on-surface-variant": "#454556",
+                        "on-primary": "#ffffff",
+                        "on-primary-container": "#bdbfff",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf8ff",
+                        "on-primary-fixed": "#04006d",
+                        "tertiary-fixed": "#ffdbd2",
+                        "on-primary-fixed-variant": "#201cdb",
+                        "inverse-surface": "#302f3a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xl": "80px",
+                        "base": "8px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px",
+                        "container-max": "1280px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["lexend"],
+                        "headline-md": ["anybody"],
+                        "body-lg": ["lexend"],
+                        "display-xl": ["anybody"],
+                        "headline-lg": ["anybody"],
+                        "label-caps": ["anybody"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "headline-md": ["32px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400" }],
+                        "display-xl": ["80px", { "lineHeight": "1.0", "letterSpacing": "-0.04em", "fontWeight": "800" }],
+                        "headline-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-caps": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        .deep-shadow {
+            box-shadow: 0 20px 50px -12px rgba(26,25,83,0.08);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 backdrop-blur-md sticky top-0 w-full z-50 shadow-[0_20px_50px_-12px_rgba(26,25,83,0.08)]">
+<div class="flex justify-between items-center max-w-container-max mx-auto px-gutter h-xl">
+<div class="font-headline-md text-body-lg font-bold tracking-tighter text-on-surface">
+                Malmong Running Club
+            </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Home</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1" href="#">Events</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Calendar</a>
+<a class="text-on-surface-variant font-medium hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-caps text-label-caps px-md py-sm rounded-full active:scale-95 transition-transform duration-200">
+                Join
+            </button>
+</div>
+</nav>
+<main class="w-full">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter py-xl">
+<h1 class="font-display-xl text-display-xl text-primary mb-md">Upcoming<br/>Races &amp; Runs</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg">
+                Find your next starting line. From casual weekend coffees runs to competitive marathons, discover the events pushing our community forward.
+            </p>
+<!-- Filters (Chips) -->
+<div class="flex flex-wrap items-center gap-sm mb-xl">
+<span class="font-label-caps text-label-caps text-on-surface-variant mr-sm">FILTER:</span>
+<button class="bg-primary text-on-primary font-label-caps text-label-caps px-md py-sm rounded-full">ALL EVENTS</button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-caps text-label-caps px-md py-sm rounded-full">SOCIAL RUNS</button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-caps text-label-caps px-md py-sm rounded-full">TEMPO WORKOUTS</button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-caps text-label-caps px-md py-sm rounded-full">LONG RUNS</button>
+<button class="bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-caps text-label-caps px-md py-sm rounded-full">RACES</button>
+</div>
+</section>
+<!-- Events Grid -->
+<section class="max-w-container-max mx-auto px-gutter pb-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Event Card 1 (Featured) -->
+<div class="bg-surface-container-lowest rounded-xl p-md deep-shadow flex flex-col col-span-1 md:col-span-2 lg:col-span-2 group">
+<div class="w-full h-64 rounded-lg overflow-hidden relative mb-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide, dynamic shot of a massive group of runners surging forward at the start line of a major city marathon. The morning light is bright, casting long, sharp shadows and highlighting the determination on the athletes' faces. The scene is dominated by a crisp, high-key light mode aesthetic with flashes of electric blue running gear standing out against the modern urban architecture in the background. The mood is highly energetic, competitive, and inspiring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzMWhWfJMXCqi2o37-jJrJdDa9kHLpr97S8RwE-ZGIwvP7MNhBXQmME5imRg5LrDrI81pZZtXezJUNfuNAIsk4dnWc6bEC1P4kqRTdAU6UZz1NXKn5rdl0RstTd6M_gr9czc-faBZh2RTC5LUx2GeorkIXg-Hx9Ibdsst5KTj8aw14A8ZPy1QhwMcnXBAWKkUx11xIxCuBEoDKEpW8VyZiYHJdRgYpR74V9yC7AVU8lIHt7WtOT8OhO7JtV0MbVuKJmiFQGAsZdcs"/>
+<div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">
+                            MARATHON
+                        </div>
+</div>
+<div class="flex justify-between items-start mb-sm">
+<span class="font-label-caps text-label-caps text-secondary">SUN, NOV 12 • 6:30 AM</span>
+<div class="flex items-center gap-xs text-on-surface-variant bg-surface-container rounded-full px-sm py-xs">
+<span class="material-symbols-outlined text-[16px]">distance</span>
+<span class="font-label-caps text-label-caps">26.2 MI</span>
+</div>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">City Center Marathon Major</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md max-w-xl">
+                        The pinnacle event of our season. Join thousands of runners pushing their limits through the heart of the city. Malmong RC will have a dedicated cheering zone at mile 20.
+                    </p>
+<button class="mt-auto bg-primary-container text-on-primary min-h-[56px] w-full md:w-auto px-xl rounded-full font-label-caps text-label-caps flex items-center justify-center gap-sm hover:bg-primary transition-colors">
+                        REGISTER FOR EVENT <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">arrow_forward</span>
+</button>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-md deep-shadow flex flex-col group">
+<div class="w-full h-48 rounded-lg overflow-hidden relative mb-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A close-up, low-angle shot of a lone runner's feet striking a paved path during an early morning tempo run. The lighting is soft and cool, typical of dawn, emphasizing a clean, light-mode visual style. The runner wears sleek, premium athletic shoes with subtle electric blue accents that contrast beautifully against the smooth gray asphalt. The mood is focused, quiet, and intensely driven." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD79eIHyVxmbc7Xlc-WypxXHPWe3xOi8YTN4UkEcT4SF4kDceoqysBdsGMSRmwVjwT2m6tYqEyrHWVhMFHSJBLCmh0RPYRZdTXO1D2x4I_vXJMbwRe-OUiI3T5BSaWp_Yn6xr5h1sdXS2m9TsJHC2ENWvPkkdJwDAaRal-gGjmUB-7b3fRrhCSG3paMrGOzZHncuVV0vvck7AYsVC5gXBVuaZaAzDy_26mBKhmG7Brh2XEJwq6QneqxZQTw2ijBxLm56Pidp07Dp1c"/>
+<div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">
+                            TEMPO
+                        </div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary mb-xs block">THU, OCT 19 • 6:00 AM</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Riverfront Thresholds</h3>
+<div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+<span class="font-body-md text-body-md">60 Min</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+<span class="font-body-md text-body-md">Hard Effort</span>
+</div>
+</div>
+<button class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">
+                        RSVP
+                    </button>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-md deep-shadow flex flex-col group">
+<div class="w-full h-48 rounded-lg overflow-hidden relative mb-md bg-surface-container-high flex items-center justify-center">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90 mix-blend-multiply" data-alt="A candid, vibrant photo of a diverse group of runners laughing and stretching together in a sunny, open park setting. The atmosphere is highly social and inclusive, characterized by bright, even lighting that perfectly aligns with a crisp light-mode UI. High-contrast athletic wear, featuring pops of primary electric blue and crisp white, stands out against the lush green grass. The mood is warm, welcoming, and community-focused." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB58pKyHT4zLXK8ieewBU-4pFBO7aW0rZRh_QlIfSQ4w6ezyV89zDOd6CWfBiTpJ_bNxECIZCxF90vHy-RTMohO0O6gHlujTJhhpGUtjZo0COmXQ_18S8Dul1th4xPzFz5ZeZpm13z1PYyu6y5h1v3MvlJDETDpmrJbdL7QTpeemjMQPLOu_MEu7cEu4V0OKTAmEzr3UpL4Om3foMlXfjO5-cSCQDE8LMCAoShz7zCds-P6ee8jHdtUN1hk620gSrckXh1pHr5hGC0"/>
+<div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">
+                            SOCIAL
+                        </div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary mb-xs block">SAT, OCT 21 • 8:00 AM</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Weekend Coffee Shakeout</h3>
+<div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">distance</span>
+<span class="font-body-md text-body-md">5K</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">local_cafe</span>
+<span class="font-body-md text-body-md">Post-run Cafe</span>
+</div>
+</div>
+<button class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">
+                        RSVP
+                    </button>
+</div>
+<!-- Event Card 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-md deep-shadow flex flex-col group">
+<div class="w-full h-48 rounded-lg overflow-hidden relative mb-md">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="An expansive, scenic shot of a runner navigating a rugged, elevated trail surrounded by dense forest. The image is bathed in bright, natural daylight, establishing a clean, airy aesthetic consistent with a premium light-mode design. The runner wears technical gear with subtle electric lead blue details that provide a striking contrast against the earthy tones of the trail. The mood is adventurous, challenging, and deeply connected to nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_HU5_ulJim3w-dyfWVPL5rCEAvP5CuiMmhFNvSZG_n5Wy9gLaVxZsIBqR3Kkm1fNtwIEuknImPe_-VgYtRKklVeSbwsMOn0xGL9mxwBZ90fdq6ZSW2LeNOpZ3qgzIg4Cz9Jr5ElIvlHlL-pbJEqdl5m-8IRBHChEBmY46YVuo15iUfNata6ZaWIqTwLQWnzmKDLUvBHyKhcaJxKZWRvZJMNDTm78d57mjFhj-N01h4vpmktx3JJBxGsCTRNWU5JvpacH3_JAYbJs"/>
+<div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">
+                            LONG RUN
+                        </div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary mb-xs block">SUN, OCT 22 • 7:00 AM</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Peak Trail Elevation</h3>
+<div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">landscape</span>
+<span class="font-body-md text-body-md">14 MI</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">terrain</span>
+<span class="font-body-md text-body-md">1200ft Gain</span>
+</div>
+</div>
+<button class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">
+                        RSVP
+                    </button>
+</div>
+<!-- Event Card 5 -->
+<div class="bg-surface-container-lowest rounded-xl p-md deep-shadow flex flex-col group">
+<div class="w-full h-48 rounded-lg overflow-hidden relative mb-md bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-[48px] text-primary/30">directions_run</span>
+<div class="absolute top-sm left-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-caps text-label-caps px-sm py-xs rounded-full">
+                            TRACK
+                        </div>
+</div>
+<span class="font-label-caps text-label-caps text-secondary mb-xs block">TUE, OCT 24 • 6:30 PM</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Speed Intervals under the Lights</h3>
+<div class="flex items-center gap-sm text-on-surface-variant mb-lg mt-auto">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">stadium</span>
+<span class="font-body-md text-body-md">Local High School</span>
+</div>
+</div>
+<button class="bg-surface-container text-on-surface hover:bg-primary-container hover:text-on-primary min-h-[56px] w-full rounded-full font-label-caps text-label-caps flex items-center justify-center transition-colors">
+                        RSVP
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-high border-t border-outline-variant w-full">
+<div class="max-w-container-max mx-auto px-gutter py-xl flex flex-col md:flex-row justify-between items-start gap-lg">
+<div class="font-headline-md text-headline-md font-extrabold text-on-surface">
+                Malmong Running Club
+            </div>
+<div class="flex flex-col md:flex-row gap-lg">
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all font-body-md text-body-md" href="#">Terms</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all font-body-md text-body-md" href="#">Privacy</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all font-body-md text-body-md" href="#">Strava</a>
+<a class="text-on-surface-variant hover:text-primary hover:underline decoration-2 underline-offset-8 transition-all font-body-md text-body-md" href="#">Community Guidelines</a>
+</div>
+<div class="text-on-surface-variant font-body-md text-body-md opacity-90 hover:opacity-100 transition-opacity mt-md md:mt-0">
+                © 2024 Malmong Running Club. Built for the forward motion.
+            </div>
+</div>
+</footer>
+</body></html>
