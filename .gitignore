@@ -10,3 +10,15 @@ desktop.ini
 
 # Local dev only
 *.local
+node_modules/
+
+# Dev tools (not needed on server)
+.claude/
+ui-ux-pro-max-skill-main/
+website-design/
+resources/
+scripts/
+serve.ps1
+start-server.bat
+package.json
+package-lock.json
